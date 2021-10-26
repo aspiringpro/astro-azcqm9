@@ -1,0 +1,68 @@
+---
+import { Markdown } from 'astro/components';
+---
+<article>
+    <div class="banner">
+        <p><strong>🧑‍🚀 Interested in building an ultra-fast progressive web application with 100% lighthouse scores?</strong> <br/>
+        Find out how!</p>
+    </div>
+
+    <section>
+        <Markdown>
+            ## 🚀 Welcome to my Astro Site
+
+            Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
+            Each page is exposed as a route based on its file name.
+        </Markdown>
+    </section>
+
+     <section>
+        <h2>👀 Want to learn more?</h2>
+        <p>Feel free to email me @ <a href="mailto:marcusjamesreed@gmail.com">marcusjamesreed@gmail.com</a>
+        </p>
+    </section>
+    
+</article>
+
+<style>
+    article {
+        padding-top: 2em;
+        line-height: 1.5;
+    }
+    section {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-width: 70ch;
+    }
+
+    .banner {
+        text-align: center;
+        font-size: 1.2rem;
+        background: var(--color-light);
+        padding: 1em 1.5em;
+        padding-left: 0.75em;
+        border-radius: 4px;
+    }
+
+    pre,
+    code {
+        font-family: var(--font-mono);
+        background: var(--color-light);
+        border-radius: 4px;
+    }
+
+    pre {
+        padding: 1em 1.5em;
+    }
+
+    .tree {
+        line-height: 1.2;
+    }
+
+    code:not(.tree) {
+        padding: 0.125em;
+        margin: 0 -0.125em;
+    }
+</style>
